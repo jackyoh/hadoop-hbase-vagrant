@@ -5,3 +5,4 @@
     - { role: git, become: yes}
     - { role: wget, become: yes}
     - { role: copy, become: yes}
+    - { role: run, become: yes}
