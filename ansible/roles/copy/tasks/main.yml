@@ -1,0 +1,11 @@
+---
+  - template:
+      src: ../../../conf/aaa.xml
+      dest: /
+      owner: root
+      group: root
+      mode: 0644
+  - replace:
+      path: /aaa.xml
+      regexp: 'iii'
+      replace: '{{ key1 }}'

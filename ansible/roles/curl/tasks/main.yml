@@ -1,0 +1,4 @@
+---
+  - name: install -y mysql-server
+    yum:
+     name: mysql

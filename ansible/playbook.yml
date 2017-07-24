@@ -1,10 +1,7 @@
 ---
 - hosts: default
-  tasks:
-   - name: test connection
-     ping:
-     register: message
-
-   - name: print debug message
-     debug:
-       msg: "{{ message }}"
+  roles:
+    - { role: curl, become: yes }
+    - { role: git, become: yes}
+    - { role: wget, become: yes}
+    - { role: copy, become: yes}

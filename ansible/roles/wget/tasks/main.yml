@@ -1,0 +1,9 @@
+---
+  - unarchive:
+      src: http://www-eu.apache.org/dist/kafka/0.10.2.1/kafka_2.11-0.10.2.1.tgz
+      dest: /opt
+      remote_src: True
+  - unarchive:
+      src: http://www-eu.apache.org/dist/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz
+      dest: /opt
+      remote_src: True
